@@ -1,0 +1,22 @@
+extends ../layout
+
+block content
+	div
+		h3.
+			LOGIN
+
+		form(name="login", method="post", action="/login")
+			div(class="row")
+				label E-mail:
+					input(type="email", placeholder="E-mail", name="email", value=data.email, required)
+			div(class="row")
+				label Password:
+					input(type="password", placeholder="Password", name="password", value=data.password, required)
+			div(vlass="row")
+				button(type="submit") SUBMIT
+
+		form(action="/register", method="get")
+				button(type="submit").
+					REGISTER
+
+
